@@ -24,7 +24,7 @@
     "version-packages": "changeset version"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.27.5",
+    "@changesets/cli": "^2.27.8",
     "@imagejs/eslint-config": "workspace:*",
     "prettier": "^3.2.5",
     "turbo": "latest"
