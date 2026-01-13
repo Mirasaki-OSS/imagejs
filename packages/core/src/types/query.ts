@@ -1,7 +1,7 @@
 import { ImageFormat, SizeByDimensions, SizeKey, SizeOptions } from './options';
 
 export type Query = {
-  [key: string]: undefined | string | string[] | Query | Query[];
+  [key: string]: undefined | string | Query | (string | Query)[];
 }
 
 export enum QueryParam {

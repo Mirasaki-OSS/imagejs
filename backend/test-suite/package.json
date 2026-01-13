@@ -3,8 +3,6 @@
   "private": true,
   "scripts": {
     "dev": "DEBUG=imagejs,imagejs:* tsup --watch --onSuccess \"node dist/index.js --main\"",
-    "lint": "eslint src/ --max-warnings 0",
-    "lint:fix": "eslint src/ --fix",
     "typecheck": "tsc --noEmit",
     "test": "jest --detectOpenHandles"
   },
@@ -12,21 +10,20 @@
     "preset": "@imagejs/jest-presets/jest/node"
   },
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^5.2.1"
   },
   "devDependencies": {
     "@imagejs/aws": "workspace:*",
     "@imagejs/core": "workspace:*",
-    "@imagejs/eslint-config": "workspace:*",
     "@imagejs/express": "workspace:*",
     "@imagejs/fs": "workspace:*",
     "@imagejs/http": "workspace:*",
     "@imagejs/jest-presets": "workspace:*",
     "@imagejs/typescript-config": "workspace:*",
-    "@types/express": "^4.17.21",
-    "@types/jest": "^29.5.12",
-    "jest": "^29.7.0",
-    "tsup": "^8.0.2",
-    "typescript": "^5.4.5"
+    "@types/express": "^5.0.6",
+    "@types/jest": "^30.0.0",
+    "jest": "^30.2.0",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
   }
 }

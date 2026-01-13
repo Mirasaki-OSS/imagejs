@@ -144,7 +144,7 @@ export class ImageTransformer {
       buffer = await transformer.toBuffer();
     } catch (error) {
       this.log(`Failed to transform image: ${error}`);
-      // Return empty image
+      // Return empty buffer on error to avoid crashing
       buffer = Buffer.alloc(0);
     }
 

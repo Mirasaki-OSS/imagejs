@@ -216,6 +216,9 @@ export class HashCache<K = string, V = string> implements HashOptions, Map<K, V>
     }
     if (this.hasMaxEntries(-1)) {
       const first = this._cache.keys().next().value;
+      if (typeof first === 'undefined') {
+        return;
+      }
       this.delete(first);
     }
   }

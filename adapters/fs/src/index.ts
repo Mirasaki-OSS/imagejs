@@ -117,7 +117,10 @@ export default class FSAdapter extends Adapter {
   override async clean(): Promise<void> {
     const dirTarget = path.join(process.cwd(), this.basePath);
     try {
-      await fs.promises.rmdir(dirTarget, { recursive: true });
+      await fs.promises.rm(dirTarget, {
+        recursive: true,
+        force: true,
+      });
     } catch (error) {
       throw new Error(`Could not clean directory at path "${this.basePath}": ${error}`);
     }  
