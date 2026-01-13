@@ -43,7 +43,7 @@
     "jest": "^29.7.0",
     "rimraf": "^5.0.7",
     "tsup": "^8.0.2",
-    "typescript": "^5.4.5"
+    "typescript": "^5.9.3"
   },
   "dependencies": {
     "debug": "^4.3.4",
