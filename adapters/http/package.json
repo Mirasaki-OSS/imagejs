@@ -43,6 +43,6 @@
   },
   "dependencies": {
     "@imagejs/core": "workspace:*",
-    "axios": "^1.13.2"
+    "axios": "^1.13.3"
   }
 }
